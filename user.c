@@ -135,8 +135,7 @@ void list(LOGIN* list[], int count)
     fprintf(stdout, "DEBUG MODE: list from user.c has been called\n");
 #endif
 
-    fprintf(stdout, "%d accounts currently available\n", count);
-    fprintf(stdout, "User names and password are:\n");
+    fprintf(stdout, "%d accounts currently available, usernames and passwords are:\n", count);
 
     for(int i = 0; i < count; i++) fprintf(stdout, "[%d] %s / %s\n", (i + 1), list[i] -> id, list[i] -> password);
 }
